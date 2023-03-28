@@ -61,6 +61,15 @@
         h4 {
             margin: 8px 0;
         }
+        @media only screen and (max-width: 900px) {
+            .wrapper {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-column-gap: 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -68,6 +77,9 @@
     <h1>idvc test</h1>
 </header>
 <main class="wrapper">
+    <div class="center-col grid-center">
+        <div id="videoCapturingEl"></div>
+    </div>
     <aside class="left-col">
         <h3>config</h3>
         <ul>
@@ -88,9 +100,6 @@
             <li><b>type:</b> <b><i>'face'</i></b></li>
         </ul>
     </aside>
-    <div class="center-col grid-center">
-        <div id="videoCapturingEl"></div>
-    </div>
 </main>
 <footer>
     <p>
