@@ -13,6 +13,7 @@ const config = {
   resizeUploadedImage: 1600,
   isShowDocumentTypeSelect: false,
   isShowGuidelinesButton: true,
+  networkUrl: 'idvc-test-vanilla/networks',
   language: 'en',
   documentTypes: [
     {
