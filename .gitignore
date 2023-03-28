@@ -1,3 +1,4 @@
 node_modules
 .idea
 idscan-idvc2-*
+!/package-lock.json
