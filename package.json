@@ -9,7 +9,7 @@
     "build": "webpack build --mode development --progress --stats-children",
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
-    "deploy": "build gh-pages -d dsit -b gh-pages"
+    "deploy": "gh-pages -d dist -b gh-pages build"
   },
   "author": "",
   "license": "ISC",
