@@ -8,7 +8,7 @@ const config = {
   autoContinue: true,
   fixFrontOrientAfterUpload: false,
   realFaceMode: 'auto', // none, auto, all
-  useCDN: false,
+  useCDN: true,
   useHeic: false,
   resizeUploadedImage: 1600,
   isShowDocumentTypeSelect: false,
