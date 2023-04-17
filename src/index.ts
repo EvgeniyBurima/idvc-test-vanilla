@@ -13,21 +13,22 @@ const config = {
   resizeUploadedImage: 1600,
   isShowDocumentTypeSelect: false,
   isShowGuidelinesButton: true,
-  networkUrl: 'idvc-test-vanilla/networks',
+  // networkUrl: 'networks',
   language: 'en',
   documentTypes: [
+    {
+      type: 'Passport',
+      steps:[
+        { type: 'front', name: 'Document Front' },
+        { type: 'mrz', name: 'Passport front', mode: { uploader: true, video: true } },
+        { type: 'face', name: 'Face', mode: { uploader: true, video: true } },
+      ],
+    },
     {
       type: 'ID',
       steps:[
         { type: 'front', name: 'Document Front' },
         { type: 'pdf', name: 'Document PDF417 Barcode', mode: { uploader: true, video: true } },
-        { type: 'face', name: 'Face', mode: { uploader: true, video: true } },
-      ],
-    },
-    {
-      type: 'Passport',
-      steps:[
-        { type: 'mrz', name: 'Document PDF417 Barcode', mode: { uploader: true, video: true } },
         { type: 'face', name: 'Face', mode: { uploader: true, video: true } },
       ],
     },

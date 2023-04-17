@@ -50,10 +50,16 @@ module.exports = (env, { mode }) => ({
     minimize: mode === 'production',
   },
   devServer: {
-    host: 'localhost',
+    host: '0.0.0.0',
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
     port: 5100,
-    https: true,
+    server: {
+      type: 'https',
+    },
     hot: true,
+    liveReload: true,
   },
   externals: {
     IDVC: '@idscan/idvc2',
